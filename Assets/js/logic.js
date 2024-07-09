@@ -1,9 +1,14 @@
-let currentTheme = 'light'  
+let currentTheme = 'light-mode'  
 
 function switchTheme(){
+    let theme = document.body;
+    theme.classList.toggle("dark-mode");
     writeToLocalStorage("theme", currentTheme)   
 }
 
+
+
+/*
 function writeToLocalStorage(name, data){
     localStorage.setItem(name, JSON.stringify(data))
 }
@@ -11,8 +16,13 @@ function writeToLocalStorage(name, data){
 function readFromLocalStorage(name){
     return JSON.parse(localStorage.getItem(name))
 }
+*/
 
 
+
+
+
+/*
 const submitEl = document.querySelector('#submit');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
@@ -34,3 +44,5 @@ function showResponse(event) {
 
 // Add listener to submit element
 submitEl.addEventListener('click', showResponse);
+
+*/
