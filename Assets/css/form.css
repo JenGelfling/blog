@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +12,37 @@ main {
     width: 90%;
     marin: 15px auto 0;
 }
+
+button {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 690px) {
+    main {
+      font-size: 1rem;
+      margin: 16px 0px 0px 0px;
+      padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    aside {
+      font-size: 0.8rem;
+    }
+  }
+
+
 
 /* .username input[username="username"]{
     grid-area: username;

@@ -8,10 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" class="button" onclick="switchTheme()">
+    <main>
+        <button type="button" class="button" onclick="switchTheme()">
         Light/Dark mode switch.
-    </button>
-    <form id="content">
+        </button>
+        <form id="content">
         <label for="username">User name:</label><br>
         <input type="text" id="username" name="username" placeholder="User name" required><br>
         <label for="title">Blog title:</label><br>
@@ -19,7 +20,11 @@
         <label for="blog">Blog content:</label><br>
         <input type="textarea" id="blog" name="blog" placeholder="Blog content" required><br><br>
         <input type="submit" value="Submit">
-    </form>
+        </form>
+    </main>
+    <aside>
+        Image goes here.
+    </aside>
 
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>

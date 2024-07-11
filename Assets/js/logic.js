@@ -1,32 +1,5 @@
 let currentTheme = localStorage.getItem('theme') || 'light-mode'
 let theme = document.body
-// let formContent = document.querySelector("#content")
-
-// formContent.addEventListener('submit', handleFormSubmit)
-// // let username = document.querySelector('#username').value
-// // let title = document.querySelector('#title').value
-// // let blog = document.querySelector('#blog').value
-// let blogs = []
-// const addBlog = (username, title, blog) => {}
-
-// function handleFormSubmit(event){
-//   event.preventDefault()
-//   // console.log(formContent)
-//   let username = document.querySelector('#username').value
-//   let title = document.querySelector('#title').value
-//   let blog = document.querySelector('#blog').value
-//   let post = {username, title, blog}
-//   localStorage.setItem('post', JSON.stringify(post))
-//   // create 
-//   // direct to next page and pull data from local storage
-//   // redirect()
-
-// }
-
-// function redirect(){
-//     window.location.href="./blog.html";
-// }
-
 
 function setTheme(){
   theme.classList.add(currentTheme)
@@ -54,6 +27,36 @@ setTheme()
 function writeToLocalStorage(){
   localStorage.setItem("theme", currentTheme)
 }
+
+
+
+// let formContent = document.querySelector("#content")
+
+// formContent.addEventListener('submit', handleFormSubmit)
+// // let username = document.querySelector('#username').value
+// // let title = document.querySelector('#title').value
+// // let blog = document.querySelector('#blog').value
+// let blogs = []
+// const addBlog = (username, title, blog) => {}
+
+// function handleFormSubmit(event){
+//   event.preventDefault()
+//   // console.log(formContent)
+//   let username = document.querySelector('#username').value
+//   let title = document.querySelector('#title').value
+//   let blog = document.querySelector('#blog').value
+//   let post = {username, title, blog}
+//   localStorage.setItem('post', JSON.stringify(post))
+//   // create 
+//   // direct to next page and pull data from local storage
+//   // redirect()
+
+// }
+
+// function redirect(){
+//     window.location.href="./blog.html";
+// }
+
 
 
 
