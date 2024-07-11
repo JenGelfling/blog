@@ -6,7 +6,12 @@
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     marin: 15px auto 0;
 }
 
+/* .username input[username="username"]{
+    grid-area: username;
+} */
