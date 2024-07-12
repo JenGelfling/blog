@@ -8,6 +8,10 @@ a {
     color: red;
 }
 
+a:hover {
+  background-color:#307d38;
+}
+
 header {
   display: inline-block;
   align-items: center;
