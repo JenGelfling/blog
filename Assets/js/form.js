@@ -7,7 +7,7 @@ let blogArr = JSON.parse(localStorage.getItem("post")) || []
 
 function handleFormSubmit(event){
   event.preventDefault()
-  // console.log(formContent)
+
   let username = document.querySelector('#username').value
   let title = document.querySelector('#title').value
   let blog = document.querySelector('#blog').value
@@ -15,10 +15,8 @@ function handleFormSubmit(event){
 
   blogArr.push(post)
   localStorage.setItem('post', JSON.stringify(blogArr))
-  // create 
-  // direct to next page and pull data from local storage
-  redirect()
 
+  redirect()
 }
 
 function redirect(){

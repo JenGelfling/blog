@@ -1,10 +1,6 @@
 let allBlogs = []
 let blogs = JSON.parse(localStorage.getItem("post"))
 
-console.log(blogs)
-
-// const addBlog = (title, username, blog) => {}
-
 const createBlogElements = (newBlog)=>{
     // create elements
     const blogDiv = document.createElement('div');
