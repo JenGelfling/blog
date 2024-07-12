@@ -8,10 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <button type="button" class="button" onclick="switchTheme()">
-        Light/Dark mode switch.
-        </button>
+    <header>
+        <button type="button" class="button" onclick="switchTheme()">Light/Dark mode switch.</button>
+    </header>
+    <main class="float-right">
         <form id="content">
         <label for="username">User name:</label><br>
         <input type="text" id="username" name="username" placeholder="User name" required><br>
@@ -22,7 +22,7 @@
         <input type="submit" value="Submit">
         </form>
     </main>
-    <aside>
+    <aside class="float-left">
         Image goes here.
     </aside>
 

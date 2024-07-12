@@ -1,14 +1,22 @@
 * {
-    display: border-box;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  margin: 15px;
+  padding: 10px;
+  width: 90%;
 }
 
 main {
     display: inline-block;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* width: 90%;
-    margin: 15px auto 0; */
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 button {
@@ -23,8 +31,22 @@ form {
 }
 
 aside {
-    display: flex;
-    flex-wrap: wrap;
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
 }
 
 @media (max-width: 690px) {

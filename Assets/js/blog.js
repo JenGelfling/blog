@@ -4,7 +4,7 @@ let blogs = JSON.parse(localStorage.getItem("post"))
 const createBlogElements = (newBlog)=>{
     // create elements
     const blogDiv = document.createElement('div');
-    const blogTitle = document.createElement('h2');
+    const blogTitle = document.createElement('h3');
     const blogUsername = document.createElement('p');
     const blogBlog = document.createElement('p');
 
