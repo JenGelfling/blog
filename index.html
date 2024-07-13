@@ -9,20 +9,26 @@
 </head>
 <body>
     <header>
-        <button type="button" class="button" onclick="switchTheme()">Light/Dark mode switch.</button>
+        <button type="button" onclick="switchTheme()">Light/Dark mode switch.</button>
     </header>
-    <main class="float-right">
+    <main>
         <form id="content">
+        <div>
         <label for="username">User name:</label><br>
-        <input type="text" id="username" name="username" placeholder="User name" required><br>
+        <input type="text" id="username" name="username" placeholder="User name" required>
+        </div><br>
+        <div>
         <label for="title">Blog title:</label><br>
-        <input type="textarea" id="title" name="title" placeholder="Blog title" required><br><br>
+        <input type="text" id="title" name="title" placeholder="Blog title" required>
+        </div><br>
+        <div>
         <label for="blog">Blog content:</label><br>
-        <input type="textarea" id="blog" name="blog" placeholder="Blog content" required><br><br>
+        <textarea id="blog" rows="5" cols="30" name="blog" placeholder="Blog content" required></textarea>
+        </div><br><br>
         <input type="submit" value="Submit">
         </form>
     </main>
-    <aside class="float-left">
+    <aside>
         <div>
             <img src="./assets/blog-photo-andrew-neel-unsplash.jpg" alt="Computer on desk.">
         </div>

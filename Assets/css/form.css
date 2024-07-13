@@ -7,36 +7,29 @@ body {
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
 }
 
 header {
   border: 1px solid black;
-  display: flex;
-  align-items: center;
-  align-content: center;
+  text-align: center;
   margin: 15px;
   padding: 10px;
-  width: 90%;
+  width: 95%;
 }
 
 main {
   border: 1px solid black;
-  display: inline-block;
-  width: 70%;
-  display: inline-block;
-  margin-left: 20px;
-}
-
-button {
-  /* display: flex;
-  flex-wrap: wrap; */
+  text-align: center;
   align-content: center;
+  justify-content: center;
+  max-width: 70%;
+  margin-left: 20px;
 }
 
 form {
   border: 1px solid black;
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   margin: 10px;
   padding: 10px;
@@ -44,24 +37,30 @@ form {
 
 aside {
   border: 1px solid black;
+  text-align: center;
   margin: 20px;
   padding: 20px;
-  width: 30%;
+  max-width: 30%;
   height: 100%;
 }
 
 img {
-  max-width: 70%;
+  max-width: 90%;
 }
 
-.float-right {
-  float: right;
-  margin-left: 25px;
+#username {
+  margin: 10px;
+  padding: 10px;
 }
 
-.float-left {
-  float: left;
-  margin-right: 25px;
+#title {
+  margin: 10px;
+  padding: 10px;
+}
+
+#blog {
+  margin: 10px;
+  padding: 10px;
 }
 
 @media (max-width: 690px) {
