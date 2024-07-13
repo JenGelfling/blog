@@ -9,13 +9,13 @@ const createBlogElements = (newBlog)=>{
     const blogBlog = document.createElement('p');
 
     // fill the fields
-    blogTitle.innerText = "Title: " + newBlog.title;
+    blogTitle.innerText = newBlog.title;
     blogUsername.innerText = "Author: " + newBlog.username;
     blogBlog.innerText = newBlog.blog;
 
     console.log(blogDiv)
     // add to the DOM
-    blogDiv.append(blogTitle, blogUsername, blogBlog);
+    blogDiv.append(blogTitle, blogBlog, blogUsername);
     document.querySelector('.blogs').append(blogDiv)
 }
 
